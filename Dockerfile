@@ -1,6 +1,6 @@
-FROM microsoft/dotnet:2-sdk
+FROM mcr.microsoft.com/dotnet/sdk:3.1
 
-COPY ValueApi/bin/Release/netcoreapp2.0 /app
+COPY ValueApi/bin/Release/netcoreapp3.1 /app
 
 ENTRYPOINT ["dotnet", "/app/ValueApi.dll"]
 
